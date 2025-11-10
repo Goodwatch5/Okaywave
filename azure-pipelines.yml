@@ -1,4 +1,10 @@
 # Starter pipeline
+- task: AzureRmWebAppDeployment@5
+  inputs:
+    ConnectionType: 'PublishProfile'
+    PublishProfilePath: '$(System.DefaultWorkingDirectory)/**/*.pubxml'
+    PublishProfilePassword: 'Timeover76$'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 - task: Xcode@5
   inputs:
     actions: 'build'
