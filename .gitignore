@@ -11,6 +11,8 @@ _OpenInEditor.lock
 # User settings
 Game.agf.user
 *.crm.user
+.venv/
+.env*
 
 # Backups
 Game.agf.bak
